@@ -1,0 +1,39 @@
+<html>
+    <head>
+    <link rel ="stylesheet" href = "style.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
+    <script src = "jquery-2.1.1.js"></script>
+    <script src = "myScript.js"></script>
+    </head>
+    <body class = "greatContainer">
+        <div class = "partition">
+            <div class = "leftBar" id = "navBar">
+                <div class = "closeside" onclick = "openNav()"><img src = "assets/006-back.png" class = "close">Close</div>
+                <ul class = "menuList">
+                    <li class = "menuPtr"><a href = "homeP.html" class = "newLink"><img src ="assets/003-paper-note.png" class = "leftIcon" id = "postIcon">Posts</a></li><br>
+                    <li class = "menuPtr"><a href = "photos.html" class = "newLink"><img src = "assets/002-picture.png" class = "leftIcon" id = "picIcon">Photos</a></li><br>
+                    <li class = "menuPtr"><a href = "albums.html" class = "newLink"><img src = "assets/001-photo-album.png" class = "leftIcon" id = "albumIcon">Albums</a></li>
+                </ul>
+            </div>
+            <div class = "topBar">
+                <div class = "group1">
+                    <img src = "assets/004-menu.png" class = "left-icon" id = "menu" onclick = "openNav()">
+                    <div class = "searchGroup" id = "sg">
+                        <a href = "homeP.html"><img src = "001-home.png" class = "imgsrc"></a>
+                        <input type = "text" class = "searcher">
+                    </div>
+                    <img src = "assets/007-user.png" class = "right-icon" onclick = "openProf()">
+                </div>
+            </div>
+            <div class = "rightBar" id = "rb">
+                <div class = "X" id  = "x" onclick="openProf()">X</div>
+                <img src = userPic.jpg class = "userPicture">
+                <div class = "user">Roy Gibeeb</div>
+            </div>
+            <div class = "center" id = "picPlace">
+                <div class = "picLayout">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

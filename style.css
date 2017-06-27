@@ -1,0 +1,558 @@
+body{
+    background-color:aliceblue;
+    font-family: "lato", sans-serif;
+}
+
+.partition{
+    width: 100%;
+}
+
+.topBar{
+    position: fixed;
+    height: 49px;
+    width: 100%;
+    background-color: rgb(0, 128, 0);
+    border-bottom: solid 1px;
+    left: 0;
+    top: 0;
+    z-index: 997;
+}
+
+.group1{
+    height:inherit;
+    position:relative;
+}
+
+#sg{
+    left: 17%;
+    position: relative;
+}
+
+.imgsrc{
+    position: relative;
+    top: 6;
+    opacity: 0.75;
+}
+
+.imgsrc:hover{
+    opacity: 1;
+}
+
+.searcher{
+    position: relative;
+    top: -3;
+    left: 4;
+    width: 30em;
+}
+
+.leftBar{
+    vertical-align: middle;
+    position: fixed;
+    left:0; bottom: 0; top: 0px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px;
+    border-right: solid 1px;
+    border-right-color: rgb(191, 191, 191);
+    z-index: 999;
+    display: none;
+    overflow: scroll;
+}
+
+.center{
+    position:absolute;
+    top:55px;
+    height: 100%;
+    margin-right:40%;
+}
+
+.centerPr{
+    position:absolute;
+    top:55px;
+    height: 100%;
+    width: 95%;
+    margin-right:40%;
+}
+
+.centerP{
+    position:absolute;
+    top:55px;
+    display: inline-block;
+    height: 100%;
+    margin-right:40%;
+}
+
+.centerA{
+    position:absolute;
+    top:55px;
+    height: 100%;
+    margin-right:40%;
+}
+
+
+.closeside{
+    cursor: pointer;
+    bottom : 10px;
+    height: 49px;
+    background: rgb(230,230,230);
+}
+
+.left-Icon{
+    cursor: pointer;
+    position: relative;
+    float: left;
+    top: 15%;
+    left: 1%;
+    height: 32px;
+    width: 32px;
+}
+
+.rightBar{
+    color: white;
+    position: fixed;
+    right: 0; bottom: 0; top: 0;
+    width: 25%;
+    border-left: groove 1px;
+    background-color: rgb(25, 102, 25);
+    z-index: 999;
+    display: none;
+}
+
+.userPicture{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    left: 90px;
+    top: 50;
+    border-radius: 50%;
+}
+
+.user{
+    position: relative;
+    font-size: 56px;
+    top: 80px;
+    left: 60px;
+     
+}
+
+.leftIcon{
+    z-index: 1000;
+}
+
+.closeside{
+    vertical-align: middle;
+}
+
+.menuList{
+    list-style: none;
+    margin-top: 3%;
+    margin-right: 35%;
+}
+
+.leftIcon{
+    position: relative;
+    top: 5px;
+    cursor:pointer;
+}
+
+.right-Icon{
+    position: relative;
+    bottom: 30px;
+    right: 20px;
+    float:right;
+    cursor: pointer;
+}
+
+.menuPtr{
+    cursor:pointer;
+}
+
+.close{
+    position: relative;
+    top: 15%;
+}
+
+.newLink{
+    color: black;
+    text-decoration: none;
+}
+
+.newLink:visited{
+    color:black;
+}
+
+.postFrame{
+    position: relative;
+    margin: auto;
+    top: 30px;
+    left: 10%;
+    width: 45%;
+    background-color: rgba(255,255,255, 0);
+    border-radius: 8px;
+    cursor: ponter;
+}
+
+.postLayout{
+    border: solid 1px;
+    position: relative;
+    margin: auto;
+    top: 30px;
+    left: 10%;
+    width: 65%;
+    background-color: rgb(204,204,255);
+    border-radius: 8px;
+}
+
+.postDetail{
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.profileLink{
+    text-decoration: none;
+}
+
+.load{
+    position: relative;
+}
+
+#emptySpace{
+    opacity: 0;
+}
+
+#loadClick{
+    text-align: center;
+    text-decoration: underline;
+    background-color: rgba(255,255,255, 0);
+    cursor: pointer;
+    display: block;
+}
+
+#loadClicker{
+    text-align: center;
+    position: relative;
+    left: 80px;
+    text-decoration: underline;
+    background-color: rgba(255,255,255, 0);
+    cursor: pointer;
+    display: block;
+}
+
+
+#loadPic{
+    text-align: center;
+    text-decoration: underline;
+    background-color: rgba(255,255,255, 0);
+    cursor: pointer;
+    display: block;
+}
+
+.msg{
+    position: relative;
+    top: 300px;
+}
+
+#loadAlbum{
+    position: relative;
+    text-align: center;
+    left: 320px;
+    text-decoration: underline;
+    background-color: rgba(255,255,255, 0);
+    cursor: pointer;
+    display: block;
+}
+
+.picContent{
+    border: solid 1px;
+    display: inline-flex;
+    position: relative;
+    margin: auto;
+    top: 45px;
+    left: 25%;
+    background-color: fuchsia;
+    border-radius: 8px;
+}
+
+.imageGen{
+    cursor: pointer;
+    position: relative;
+}
+
+.X{
+    position: relative;
+    float:right;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.albumFrame{
+    border: solid 1px;
+    position: relative;
+    display:inline-block;
+    width: 200px;
+    height: 250px;
+    margin: 0 auto;
+    left: 40%;
+    top: 45px;
+    border-radius: 4px;
+    background-color: rgba(204,204,255, 0.5);
+    vertical-align: top;
+    cursor: pointer;
+    
+}
+
+.aImage{
+    position: relative;
+    display: inline-block;
+    left:12.5%;
+    top: 5px;
+    height: 75px;
+    width: 75px;
+    border: solid 1px;
+}
+
+.picContainer{
+    color: white;
+    top: 52px;
+    position: fixed;
+    width: 99%;
+    height: 90%;
+    background-color: rgba(0,0,0, 0.8);
+    display: inline-block;
+    z-index: 1000;
+}
+
+.albumContainer{
+    top: 52px;
+    position: absolute;
+    overflow-y: scroll;
+    width: 99%;
+    background-color: rgba(0,0,0, 0.5);
+    color: rgb(255,255,255);
+}
+
+
+.bigPhoto{
+    display: inline-block;
+    position: relative;
+    left: 25px;
+    top:25px;
+}
+
+.poster{
+    display:inline-block;
+    position: fixed;
+    float: right;
+    top: 120px;
+    left: 660px;
+
+}
+
+#uName{
+    cursor: pointer;
+    margin-top: 1px;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+#uName:hover{
+    color: rgb(0, 153, 51);
+}
+
+#uPicName{
+    cursor: pointer;
+}
+
+#uPicName:hover{
+    color: rgb(128, 179, 255);
+}
+
+.titlePic{
+    font-size: 36px;
+    font-weight: 600;
+    display:inline-block;
+    position: fixed;
+    float: right;
+    top: 200px;
+    left: 660px;
+}
+
+.albumName{
+    position: relative;
+    left: 5px;
+    top : 25px;
+}
+
+.albumSrc{
+    font-size: 36px;
+    font-weight: 600;
+    display:inline-block;
+    position: fixed;
+    float: right;
+    top: 400px;
+    left: 660px;
+    cursor: pointer;
+}
+
+.albumSrc:hover{
+    color: rgb(128, 179, 255);
+}
+
+.exit{
+    position: relative;
+    float: right;
+    right: 25px;
+    top: 10px;
+    cursor: pointer;
+}
+
+#uPicName{
+    top:140px;
+    
+}
+
+.info{
+    top: 30px;
+    left: 6%;
+    margin: auto;
+    position: absolute;
+    display: inline-block;
+    background-color: rgb(242,242,242);
+    border: solid 1px;
+    border-radius: 4px;
+    width: 90%;
+    padding: 10px;
+}
+
+.pName{
+    display: inline-block;
+}
+
+.nameType{
+    display: inline-block;
+}
+
+#rName{
+    font-size: 24px;
+}
+
+#useName{
+    font-size: 14px;
+}
+
+.notNames{
+    width: inherit;
+    display: inline-block;
+    color: rgb(115,115,115);
+}
+
+.address{
+    display: inline-block;
+    width:50%;
+}
+
+.company{
+    display: inline-block;
+    width:45%;
+}
+
+.albContainer{
+    color: white;
+    top: 52px;
+    position: fixed;
+    width: 99%;
+    height: 90%;
+    background-color: rgba(0,0,0, 0.8);
+}
+
+.restOfAlbum{
+    left: 10px;
+    position: relative;
+    display: inline-block;
+    z-index: 901;
+    padding: 3px;
+}
+
+.albumElem{
+    position: relative;
+    padding: 3px;
+    border: solid 1px;
+}
+
+.albumOverLay{
+    overflow-y: scroll;
+}
+
+.albThumbs{
+    cursor: pointer;
+}
+
+#usName{
+    cursor:pointer;
+}
+
+.nC{
+    position: relative;
+    margin: 0 auto;
+}
+
+.postLayoutPr{
+    border: solid 1px;
+    position: relative;
+    margin: auto;
+    top: 60px;  
+    right: 250px;
+    width: 500px;
+    background-color: rgb(204,204,255);
+    border-radius: 8px;
+}
+
+
+.centerPosts{
+    position: relative;
+    float: right;
+    left: 0;
+    top: 230px;
+}
+
+.centerAlbums{
+    position: relative;
+    float: left;
+    top: 250px;
+    width: 400px;
+    display: inline-block;
+}
+
+.albumFramePr{
+    border: solid 1px;
+    position: relative;
+    display:inline-block;
+    width: 200px;
+    height: 250px;
+    margin: 0 auto;
+    left: 40%;
+    top: 45px;
+    border-radius: 4px;
+    background-color: rgba(204,204,255, 0.5);
+    vertical-align: top;
+    cursor: pointer;  
+}
+
+.header{
+    margin: auto;
+    font-size: 32px;
+}
+
+#left{
+    position: absolute;
+    left: 210px;
+    top: -20px;
+}
+
+.msg{
+    position:relative;
+    top: 200px;
+    color: rgb(25, 102, 25);
+}

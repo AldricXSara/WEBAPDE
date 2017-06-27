@@ -1,0 +1,45 @@
+<html>
+    <head>
+    <link rel ="stylesheet" href = "style.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
+    <script src = "jquery-2.1.1.js"></script>
+    <script src = "myScript.js"></script>
+    </head>
+    <body>
+        <div class = "partition">
+            <div class = "leftBar" id = "navBar">
+                <div class = "closeside" onClick = "openNav()"><img src = "assets/006-back.png" class = "close">Close</div>
+                <ul class = "menuList">
+                    <li class = "menuPtr"><a href = "homeP.html" class = "newLink"><img src ="assets/003-paper-note.png" class = "leftIcon" id = "postIcon">Posts</a></li><br>
+                    <li class = "menuPtr"><a href = "photos.html" class = "newLink"><img src = "assets/002-picture.png" class = "leftIcon" id = "picIcon">Photos</a></li><br>
+                    <li class = "menuPtr"><a href = "albums.html" class = "newLink"><img src = "assets/001-photo-album.png" class = "leftIcon" id = "albumIcon">Albums</a></li>
+                </ul>
+                
+            </div>
+            <div class = "topBar">
+                <div class = "group1">
+                    <img src = "assets/004-menu.png" class = "left-icon" id = "menu" onclick = "openNav()">
+                    <div class = "searchGroup" id = "sg">
+                        <a href = "homeP.html"><img src = "001-home.png" class = "imgsrc"></a>
+                        <input type = "text" class = "searcher">
+                    </div>
+                    <img src = "assets/007-user.png" class = "right-icon" id = "ri" onclick = "openProf()">
+                </div>
+               
+            </div>
+            <div class = "rightBar" id = "rb">
+                <div class = "X" id  = "x" onclick="openProf()">X</div>
+                <img src = userPic.jpg class = "userPicture">
+                <div class = "Msg">This is a message from the solo developer. If you manage to find it, you must be pretty OG. Send nodes.</div>
+                <div class = "user">Roy Gibeeb</div>
+            </div>
+            <div class = "centerP" id = "contentPlace">
+<!--                 <div class = "postLayout" id = "postContainer">
+                   <div class = "postDetail" class = "name" id = "poster">Name</div>
+                    <div class = "postDetail" class = "title" id = "postTitle">Title</div> 
+                    <div class = "postDetail" class = "body" id = "postBody">Post body</div>
+              </div>
+-->          </div>
+        </div>
+    </body>
+</html>
